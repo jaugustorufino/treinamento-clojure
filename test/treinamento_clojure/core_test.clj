@@ -14,4 +14,9 @@
     (is (= 0 (taxa-de-entrega 201)))
     (is (= 0 (taxa-de-entrega 34223)))))
 
-
+(deftest terceiro-nome-test
+  (testing "Vetor comum"
+    (is (= "João" (retorna-terceiro-nome ["José" "Augusto" "João" "Maria"]))))
+  (testing "Vetores inválidos"
+    (is (= "Não é possível" (retorna-terceiro-nome nil)))
+    (is (= "Não é possível" (retorna-terceiro-nome [])))))

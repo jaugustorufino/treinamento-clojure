@@ -9,3 +9,13 @@
         (<= valor-da-compra 200) 5
         :else 0))
 
+(defn retorna-terceiro-nome
+  ; Imprime o primeiro nome dado um vetor de nomer
+  [nomes]
+  (get nomes 2 "Não é possível"))
+
+(defn substitui-primeiro-nome
+  [nomes novo-primeiro-nome]
+  (assoc nomes 0 novo-primeiro-nome))
+
+(substitui-primeiro-nome ["João" "Augusto"] "José")
