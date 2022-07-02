@@ -18,4 +18,3 @@
   [nomes novo-primeiro-nome]
   (assoc nomes 0 novo-primeiro-nome))
 
-(substitui-primeiro-nome ["João" "Augusto"] "José")
