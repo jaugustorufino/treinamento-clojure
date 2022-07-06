@@ -17,3 +17,16 @@
 (defn soma-das-idades
   [idades]
   (reduce + idades))
+
+;; DESAFIO 3: crie uma função que recebe um vetor de nomes e retorne o
+;; tamanho médio dos nomes.
+;; Ex: (tamanho-medio-dos-nomes ["Marcio" "João"]) ; deve retornar 5
+;; ["Marcio" "Joao"] -> [6 4] -> 5
+
+(defn tamanho-medio-dos-nomes
+  [nomes]
+  (/ (reduce + (map count nomes)) (count nomes)))
+
+
+
+
