@@ -7,12 +7,8 @@
 ;; DESAFIO 1: crie uma função que recebe este vetor como entrada e retorna a
 ;; quantidade de estudantes que estão no quinto ano.
 
-(defn quinta-serie?
-  [ano]
-  (= ano 5))
-
 (defn quantidade-estudantes-quinta-serie
   [series-estudantes]
-  (count (filter quinta-serie? series-estudantes)))
+  (count (filter #(= 5 %) series-estudantes)))
 
 (quantidade-estudantes-quinta-serie [5 6 5 4 5 3 8])
