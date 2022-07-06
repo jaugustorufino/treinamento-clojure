@@ -11,4 +11,9 @@
   [series-estudantes]
   (count (filter #(= 5 %) series-estudantes)))
 
-(quantidade-estudantes-quinta-serie [5 6 5 4 5 3 8])
+;; DESAFIO 2: crie uma função que recebe um vetor de idades e retorna a soma.
+;; Ex: (soma-das-idades [ 5 10 5 ]) ; deve retornar 20
+
+(defn soma-das-idades
+  [idades]
+  (reduce + idades))
