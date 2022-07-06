@@ -27,6 +27,11 @@
   [nomes]
   (/ (reduce + (map count nomes)) (count nomes)))
 
+;; DESAFIO final: Crie uma função que recebe um vetor de nomes e retorne o
+;; tamanho médio dos nomes, mas deve-se ignorar nomes com 3 ou menos caracteres.
 
+(defn tamanho-medio-dos-nomes-4-ou-mais
+  [nomes]
+  (/ (reduce + (filter #(< 3 %) (map count nomes))) (count (filter #(< 3 %) (map count nomes)))))
 
 
